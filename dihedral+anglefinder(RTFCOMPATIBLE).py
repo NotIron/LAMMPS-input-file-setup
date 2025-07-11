@@ -156,9 +156,9 @@ def readrtf(path):
     return atomtypes
 
 # Example usage
-file_path = 'molecules.xyz'
-rtf_path='output.xyz'
-bond_path='bondlistalligned.txt'
+file_path = 'molecules.xyz' #structure file for all molecules
+rtf_path='output.xyz'    #atom type file
+bond_path='bondlistalligned.txt' #bondlist file
 atoms = parse_xyz(file_path)
 atomtypes=readrtf(rtf_path)
 bonded = readbonds(bond_path, atoms)
